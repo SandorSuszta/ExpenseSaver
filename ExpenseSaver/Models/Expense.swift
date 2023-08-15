@@ -1,8 +1,8 @@
 import Foundation
 
-struct Expense: Identifiable {
+struct Expense: Identifiable, Codable {
     
-    let id = UUID()
+    var id = UUID()
     let name: String
     let category: String
     let price: Double

@@ -31,11 +31,15 @@ struct AddView: View {
             .navigationTitle("Add new expense")
             .toolbar {
                 Button {
-                    
+                    expensesStore.items.append(makeExpense())
                 } label: {
                     Text("Save")
                 }
             }
         }
+    }
+    
+    private func makeExpense() -> Expense {
+        Expense(name: name, category: category, price: price)
     }
 }
