@@ -11,6 +11,9 @@
 		79E7180B2A8BE38900F97437 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E7180A2A8BE38900F97437 /* ContentView.swift */; };
 		79E7180D2A8BE39000F97437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E7180C2A8BE39000F97437 /* Assets.xcassets */; };
 		79E718102A8BE39000F97437 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E7180F2A8BE39000F97437 /* Preview Assets.xcassets */; };
+		79E718172A8BE3B300F97437 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E718162A8BE3B300F97437 /* Expense.swift */; };
+		79E718192A8BE44C00F97437 /* ExpenseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E718182A8BE44C00F97437 /* ExpenseStore.swift */; };
+		79E7181F2A8BF05300F97437 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E7181E2A8BF05200F97437 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		79E7180A2A8BE38900F97437 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79E7180C2A8BE39000F97437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79E7180F2A8BE39000F97437 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79E718162A8BE3B300F97437 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		79E718182A8BE44C00F97437 /* ExpenseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseStore.swift; sourceTree = "<group>"; };
+		79E7181E2A8BF05200F97437 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +57,10 @@
 		79E718072A8BE38900F97437 /* ExpenseSaver */ = {
 			isa = PBXGroup;
 			children = (
-				79E718082A8BE38900F97437 /* ExpenseSaverApp.swift */,
-				79E7180A2A8BE38900F97437 /* ContentView.swift */,
-				79E7180C2A8BE39000F97437 /* Assets.xcassets */,
+				79E7181B2A8BEE1400F97437 /* App */,
+				79E7181D2A8BEE3900F97437 /* Persistance */,
+				79E7181C2A8BEE2600F97437 /* Views */,
+				79E7181A2A8BEDF200F97437 /* Models */,
 				79E7180E2A8BE39000F97437 /* Preview Content */,
 			);
 			path = ExpenseSaver;
@@ -65,6 +72,40 @@
 				79E7180F2A8BE39000F97437 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79E7181A2A8BEDF200F97437 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79E718162A8BE3B300F97437 /* Expense.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79E7181B2A8BEE1400F97437 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				79E718082A8BE38900F97437 /* ExpenseSaverApp.swift */,
+				79E7180C2A8BE39000F97437 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		79E7181C2A8BEE2600F97437 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79E7180A2A8BE38900F97437 /* ContentView.swift */,
+				79E7181E2A8BF05200F97437 /* AddView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79E7181D2A8BEE3900F97437 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				79E718182A8BE44C00F97437 /* ExpenseStore.swift */,
+			);
+			path = Persistance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E718172A8BE3B300F97437 /* Expense.swift in Sources */,
 				79E7180B2A8BE38900F97437 /* ContentView.swift in Sources */,
+				79E7181F2A8BF05300F97437 /* AddView.swift in Sources */,
+				79E718192A8BE44C00F97437 /* ExpenseStore.swift in Sources */,
 				79E718092A8BE38900F97437 /* ExpenseSaverApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
