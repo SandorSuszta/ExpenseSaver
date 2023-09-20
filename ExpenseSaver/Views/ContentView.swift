@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    private var expensesSrore = ExpensesStore()
+    @StateObject private var expensesSrore = ExpensesStore()
     @State private var showingAddExpense = false
     
     var body: some View {
